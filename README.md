@@ -4,9 +4,9 @@
 
 ## Datos para conectar a base y crear procedimientos
 
-| IP           | PORT  | USER | PASSWORD |
-|--------------|-------|------|----------|
-| 192.168.32.2 | 30015 |      |          |
+| IP           | PORT  | USER     | PASSWORD         |
+|--------------|-------|----------|------------------|
+| 192.168.32.2 | 30015 | B1EU_DEV | 6OR2gaqV5hQSj5i4 |
 
 ### create procedure syntax
 ```sql
