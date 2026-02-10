@@ -73,8 +73,8 @@ END
   }
 }
 ```
-> procedure: Nombre del procedimiento.
-> params: Objeto JSON con pares clave: valor con los nombres y valores de los parámetros que recibe el procedimiento.
++ procedure: Nombre del procedimiento.
++ params: Objeto JSON con pares clave: valor con los nombres y valores de los parámetros que recibe el procedimiento.
 
 ### cURL
 ```shell
