@@ -17,8 +17,8 @@ WITH ParsedLots AS (
 SELECT L."Unload", L."ItemCode", SUM(L."Quantity") as "Stock", L."FadfreeCode", L."WhsCode"
 FROM "BH1_EUROFISH_PROD"."BatchesBaseData" L
          JOIN "GetItemsAttributes" IA ON IA."ItemCode" = L."ItemCode"
-         JOIN ParsedLots PL ON L."Unload" = PL."unload" AND L."ItemCode" = PL."item" AND L."FadfreeCode" = PL."fadfree"
-WHERE L."ProdDate" = :prod_day
+         JOIN ParsedLots PL ON L."Unload" = PL."unload" AND L."ItemCode" = PL."item"
+WHERE L."ProdDate" = :prod_day AND (PL."fadfree" is null or L."FadfreeCode" = PL."fadfree")
 GROUP BY L."Unload", L."ItemCode", L."FadfreeCode", L."WhsCode";
 
 END;
